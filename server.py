@@ -15,6 +15,9 @@ app = Flask(__name__)
 # Enable CORS for all routes
 CORS(app)
 
+app.run(host='0.0.0.0', port=5000, debug=True)
+
+
 # Set up MongoDB Atlas connection
 try:
     client = MongoClient(os.getenv("MONGODB_URI"))
