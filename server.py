@@ -15,7 +15,7 @@ app = Flask(__name__)
 # Enable CORS for all routes
 CORS(app)
 
-app.run(host='0.0.0.0', port=5000, debug=True)
+
 
 
 # Set up MongoDB Atlas connection
@@ -68,4 +68,4 @@ def content_history():
 # Run the server in debug mode
 if __name__ == "__main__":
     print("Starting Flask server...")
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=7000 or 6000, debug=True)
